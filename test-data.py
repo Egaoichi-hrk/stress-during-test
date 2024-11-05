@@ -10,6 +10,8 @@ import statsmodels.api as sm
 import matplotlib.font_manager as fm
 
 # 日本語フォントの設定
+font_path = './ipaexg.ttf'
+font_prop = fm.FontProperties(fname=font_path)
 plt.rcParams['font.family'] = 'IPAexGothic'  # 'IPAexGothic'はインストール済みの日本語フォント
 plt.rcParams['axes.unicode_minus'] = False  # マイナス記号が文字化けしないように設定
 
