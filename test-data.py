@@ -7,7 +7,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 import statsmodels.api as sm
-import japanize_matplotlib
+import matplotlib.font_manager as fm
+
+# 日本語フォントの設定
+plt.rcParams['font.family'] = 'IPAexGothic'  # 'IPAexGothic'はインストール済みの日本語フォント
+plt.rcParams['axes.unicode_minus'] = False  # マイナス記号が文字化けしないように設定
 
 st.header('試験中に感じるストレスとその成績結果の関係性')
 
